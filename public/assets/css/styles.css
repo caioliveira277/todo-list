@@ -17,6 +17,7 @@ body {
 }
 header {
   font-size: 1.5rem;
+  text-align: center;
 }
 header,
 form {
@@ -29,6 +30,8 @@ form {
 form input {
   border-radius: 5px 0px 0px 5px;
   color: #2e2e2e;
+  max-width: 450px;
+  width: 70vw;
 }
 form input,
 form button {
