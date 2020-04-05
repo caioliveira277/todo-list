@@ -73,10 +73,10 @@ function HandlerActions(event) {
   if (item.getAttribute("data-action") === "delete") {
     index = [...todo.parentNode.children].indexOf(todo);
     todo.classList.add("fall");
-    DeleteTodo(todo);
     PlaySong("remove");
-    UpdateTitle(false);
-    if (!todo.classList.contains("completed")) DeleteCompletedTodo(index);
+    DeleteTodo(todo);
+    DeleteCompletedTodo(index);
+    if (!todo.classList.contains("completed")) UpdateTitle(false);
     return todo.addEventListener("transitionend", () => {
       todo.remove();
     });
