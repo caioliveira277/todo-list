@@ -1,1 +1,39 @@
-<h1>TESTE</h1>
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="./public/assets/css/bundle.css" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Poppins&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <link rel="shortcut icon" href="./public/assets/images/favicon.ico" type="image/x-icon">
+  <title>Todo List</title>
+</head>
+
+<body>
+  <audio src="./public/assets/songs/add_song.mp3" type="audio/mp3" controls data-type="add"></audio>
+  <audio src="./public/assets/songs/remove_song.mp3" type="audio/mp3" controls data-type="remove"></audio>
+  <header>
+    <h1>Simple Todo List</h1>
+  </header>
+  <form>
+    <input type="text" autofocus placeholder="Your todo" id="todo-input">
+    <button type="submit" id="todo-button">
+      <i class="material-icons">add_box</i>
+    </button>
+    <div class="select">
+      <select name="todos" id="filter-todo">
+        <option value="all">All</option>
+        <option value="completed">Completed</option>
+        <option value="uncompleted">Uncompleted</option>
+      </select>
+    </div>
+  </form>
+  <section class="todo-container">
+    <ul id="todo-list"></ul>
+  </section>
+  <script src="../src/bundle.js"></script>
+</body>
+
+</html>
