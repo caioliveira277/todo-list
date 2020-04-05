@@ -6,10 +6,10 @@ const songs = document.querySelectorAll("audio");
 
 /**
  * Play audio
- * 
- * @example 
+ *
+ * @example
  *   PlaySong("add")
- * 
+ *
  * @param   {String} required  "add" or "remove"
  * @returns {Event}
  */
@@ -21,12 +21,13 @@ function PlaySong(type) {
     }
   });
 }
-function UpdateTitle(increase = true){
+function UpdateTitle(increase = true) {
   const currentValue = parseInt(document.title);
-  if (currentValue === 0) return;
-  if(increase === true){
+
+  if (increase === true) {
     document.title = `${currentValue + 1} Tarefas em aberto`;
-  }else{
+  } else {
+    if (currentValue === 0) return;
     document.title = `${currentValue + -1} Tarefas em aberto`;
   }
 }
@@ -49,7 +50,7 @@ function CreateTodoDiv(todoValue, completed = false) {
   todoDiv.appendChild(newTodo);
   todoDiv.appendChild(completedButton);
   todoDiv.appendChild(trashButton);
-  if(completed === true) todoDiv.classList.add("completed");
+  if (completed === true) todoDiv.classList.add("completed");
 
   return todoDiv;
 }
@@ -70,25 +71,25 @@ function HandlerActions(event) {
   let index;
 
   if (item.getAttribute("data-action") === "delete") {
-    index = [...todo.parentNode.children].indexOf(todo); 
+    index = [...todo.parentNode.children].indexOf(todo);
     todo.classList.add("fall");
-    DeleteCompletedTodo(index);
     DeleteTodo(todo);
     PlaySong("remove");
     UpdateTitle(false);
+    if (!todo.classList.contains("completed")) DeleteCompletedTodo(index);
     return todo.addEventListener("transitionend", () => {
       todo.remove();
     });
   }
   if (item.getAttribute("data-action") === "completed") {
-    index = [...todo.parentNode.children].indexOf(todo); 
-    if(todo.classList.toggle("completed")){
+    index = [...todo.parentNode.children].indexOf(todo);
+    if (todo.classList.toggle("completed")) {
       SaveCompletedTodo(index);
       UpdateTitle(false);
-    }else{
+    } else {
       DeleteCompletedTodo(index);
       UpdateTitle(true);
-    };
+    }
   }
 }
 function FilterTodo(event) {
@@ -164,13 +165,13 @@ function GetTodos() {
   if (localStorage.getItem("completeds")) {
     completeds = JSON.parse(localStorage.getItem("completeds"));
     document.title = `${todos.length - completeds.length} Tarefas em aberto`;
-  }else{
+  } else {
     document.title = `0 Tarefas em aberto`;
   }
   todos.forEach((todoItem, index) => {
-    if(completeds.indexOf(index) !== -1){
+    if (completeds.indexOf(index) !== -1) {
       todoList.appendChild(CreateTodoDiv(todoItem, true));
-    }else{
+    } else {
       todoList.appendChild(CreateTodoDiv(todoItem));
     }
   });
