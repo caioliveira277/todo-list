@@ -23,7 +23,7 @@ function PlaySong(type) {
 }
 function UpdateTitle(increase = true){
   const currentValue = parseInt(document.title);
- 
+  if (currentValue === 0) return;
   if(increase === true){
     document.title = `${currentValue + 1} Tarefas em aberto`;
   }else{
