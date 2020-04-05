@@ -25,10 +25,10 @@ function UpdateTitle(increase = true) {
   const currentValue = parseInt(document.title);
 
   if (increase === true) {
-    document.title = `${currentValue + 1} Tarefas em aberto`;
+    document.title = `${currentValue + 1} Open tasks`;
   } else {
     if (currentValue === 0) return;
-    document.title = `${currentValue + -1} Tarefas em aberto`;
+    document.title = `${currentValue + -1} Open tasks`;
   }
 }
 function CreateTodoDiv(todoValue, completed = false) {
@@ -164,9 +164,9 @@ function GetTodos() {
   }
   if (localStorage.getItem("completeds")) {
     completeds = JSON.parse(localStorage.getItem("completeds"));
-    document.title = `${todos.length - completeds.length} Tarefas em aberto`;
+    document.title = `${todos.length - completeds.length} Open tasks`;
   } else {
-    document.title = `0 Tarefas em aberto`;
+    document.title = `0 Open task`;
   }
   todos.forEach((todoItem, index) => {
     if (completeds.indexOf(index) !== -1) {
