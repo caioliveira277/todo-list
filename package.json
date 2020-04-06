@@ -16,7 +16,7 @@
   "bugs": {
     "url": "https://github.com/caioliveira277/todoList/issues"
   },
-  "homepage": "https://github.com/caioliveira277/todoList#readme",
+  "homepage": "https://caioliveira277.github.io/todoList/",
   "dependencies": {},
   "devDependencies": {
     "gulp": "^4.0.2",
