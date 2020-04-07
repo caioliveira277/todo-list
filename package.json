@@ -19,6 +19,7 @@
   "homepage": "https://caioliveira277.github.io/todoList/",
   "dependencies": {},
   "devDependencies": {
+    "@babel/preset-env": "^7.9.0",
     "gulp": "^4.0.2",
     "gulp-babel": "^8.0.0",
     "gulp-babel-minify": "^0.5.1",

@@ -6,16 +6,20 @@ const concat = require("gulp-concat");
 
 gulp.task("minifyCss", () => {
   return gulp
-  .src("public/assets/css/styles.css")
-  .pipe(cssminify())
-  .pipe(concat("bundle.css"))
-  .pipe(gulp.dest("public/assets/css/"))
-})
+    .src("public/assets/css/styles.css")
+    .pipe(cssminify())
+    .pipe(concat("bundle.css"))
+    .pipe(gulp.dest("public/assets/css/"));
+});
 
 gulp.task("minifyJs", () => {
   return gulp
     .src("src/app.js")
-    .pipe(babel())
+    .pipe(
+      babel({
+        presets: ["@babel/env"],
+      })
+    )
     .pipe(
       minify({
         mangle: {
