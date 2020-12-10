@@ -1,0 +1,10 @@
+<svg id="ilustracao-carrinho-ok" xmlns="http://www.w3.org/2000/svg" width="102" height="102" viewBox="0 0 102 102">
+  <path id="Path_901" data-name="Path 901" d="M146.966,136.416a27.659,27.659,0,0,1-27.625-27.625c0-.718.055-1.419.106-2.125H87.466a2.125,2.125,0,0,0-2.087,2.516l6.375,34a2.125,2.125,0,0,0,2.087,1.734h58.369a10.625,10.625,0,0,0,10.544-9.307l.578-4.616A27.443,27.443,0,0,1,146.966,136.416Z" transform="translate(-68.341 -85.416)" fill="#ffc107"/>
+  <g id="Group_862" data-name="Group 862" transform="translate(0 8.5)">
+    <circle id="Ellipse_155" data-name="Ellipse 155" cx="10.625" cy="10.625" r="10.625" transform="translate(68 72.25)" fill="#455a64"/>
+    <circle id="Ellipse_156" data-name="Ellipse 156" cx="10.625" cy="10.625" r="10.625" transform="translate(25.5 72.25)" fill="#455a64"/>
+    <path id="Path_902" data-name="Path 902" d="M87.125,110.666H38.076A14.913,14.913,0,0,1,23.49,98.711L13.133,46.916H2.125a2.125,2.125,0,0,1,0-4.25h12.75a2.125,2.125,0,0,1,2.082,1.7l10.7,53.508a10.655,10.655,0,0,0,10.417,8.542H87.125a2.125,2.125,0,0,1,0,4.25Z" transform="translate(0 -42.666)" fill="#455a64"/>
+  </g>
+  <circle id="Ellipse_157" data-name="Ellipse 157" cx="23.375" cy="23.375" r="23.375" transform="translate(55.25 0)" fill="#4caf50"/>
+  <path id="Path_903" data-name="Path 903" d="M330.721,85.154a2.124,2.124,0,0,1-1.5-.621l-8.5-8.5a2.125,2.125,0,0,1,3-3l7,7,15.5-15.5a2.125,2.125,0,1,1,3.057,2.953l-.052.052-17,17A2.125,2.125,0,0,1,330.721,85.154Z" transform="translate(-256.346 -51.154)" fill="#fafafa"/>
+</svg>
