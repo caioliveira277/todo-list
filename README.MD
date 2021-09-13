@@ -11,7 +11,7 @@
 <br>
 
 ## Ideia 💡:
-Criar um projeto para criar tarefas **todo-list**.
+Desenvolver um projeto para salvar tarefas em forma de **todo-list**.
 
 ## Funcionalidades:
 - Adicionar tarefas;
@@ -29,7 +29,7 @@ Abaixo estará listada as ferramentas necessárias para o funcionamento do proje
   [<ins>Guia de instalação NodeJS</ins>](https://nodejs.org/en/).
   
 ### Instalando dependencias:
-Execute o comandos para instalar as dependencias do projeto.
+Execute o comando para instalar as dependencias do projeto.
    ```sh
    npm install
    ```  
