@@ -51,7 +51,7 @@ Os scripts abaixo executam a compilação do projeto.
 ---
 ## Links: 🌐
 ***Projeto online GitHub Pages:***<br>
-[<ins>Link do projeto</ins>](https://caioliveira277.github.io/todoList/)
+[<ins>Link do projeto</ins>](https://caioliveira277.github.io/todo-list/)
 
 ***Curso The Creative Javascript:***<br>
 [<ins>Link do curso</ins>](https://developedbyed.com/p/the-creative-javascript-course)
